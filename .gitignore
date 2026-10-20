@@ -1,0 +1,27 @@
+cat > .gitignore <<'EOF'
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large generated embeddings and datasets
+*.npy
+polyvore_item_metadata.json
+
+# Trained model checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# Logs
+*.log
+EOF
